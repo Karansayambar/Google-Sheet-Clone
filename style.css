@@ -1,0 +1,138 @@
+@font-face {
+    font-family: poppins;
+    src: url(./Assets/Poppins-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+}
+header{
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 8px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    display: none;
+}
+
+input[type="color"]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+input:checked + label{
+    background-color: lightblue;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.row2{
+    display: flex;
+    width: 60vw;
+}
+
+.row2 input{
+    flex-grow: 1;
+}
+
+.row2 .selected-cell{
+    width: 100px;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    margin-top: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: aliceblue;
+    width: fit-content;
+}
+
+.header > .cell{
+    min-width: 150px;
+    padding: 2px 5px;
+    border: 1px solid gray;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 50px auto;
+    width: fit-content;
+}
+
+.container{
+    height: 85vh;
+    overflow: scroll;
+}
+.sno-container{
+    background-color: white;
+    position: sticky;
+    left: 0;
+}
+.sno-container .snocell{
+    border: .5px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+}
+
+.sno-container{
+    position: sticky;
+    top: 0;
+}
+
+.rows-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+
+.row .cell{
+    border: .5px solid gray;
+    border-top: none;
+    border-right: none;
+    min-width: 150px;
+    min-height: 1.5rem;
+}
+
+.first-cell{
+    border: .5px solid gray;
+    min-width: 50px;
+    height: 1.8rem;
+}
+
+.row .cell:focus{
+    outline: 2px solid #1B72E8;
+    height: auto;
+    border-color: transparent;
+}

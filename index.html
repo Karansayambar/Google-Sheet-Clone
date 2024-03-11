@@ -28,7 +28,7 @@
     </header>
     <section class="head">
         <form action="">
-            <select name="font-family">
+            <select name="fontFamily">
                 <option value="one">one</option>
                 <option value="two">two</option>
                 <option value="three">three</option>
@@ -59,11 +59,11 @@
                 <label for="align-center" class="material-icons">format_align_center</label>
             </div>
             <div>
-                <input type="color" name="text-color" id="text-color">
+                <input type="color" value="#000000" name="textColor" id="text-color">
                 <label for="text-color" class="material-icons">format_color_text</label>
             </div>
             <div>
-                <input type="color" name="bg-color" id="bg-color">
+                <input type="color" value="#ffffff" name="bgColor" id="bg-color">
                 <label for="bg-color" class="material-icons">format_color_fill</label>
             </div>
         </form>
@@ -75,14 +75,32 @@
         </div>
     </section>
     <section class="container">
-        <div class="header"></div>
+        <div class="header">
+
+        </div>
         <div class="body">
-            <div class="sno-container"></div>
-            <div class="rows-container"></div>
+            <div class="sno-container">
+                <!-- <div class="sno">0</div>
+                <div class="sno">1</div>
+                <div class="sno">1</div>
+                <div class="sno">50</div> -->
+            </div>
+            <div class="rows-container">
+
+            </div>
         </div>
     </section>
+    <section class="foot">
+        <button type="button" onclick="createNewSheet()" class="material-icons">add</button>
 
-    <script src="./dataflow.js"></script>
+        <div class="foot-form">
+            <input type="radio" id="sheet1" name="sheet" value="sheet1">
+            <label for="sheet1">Sheet 1</label>
+        </div>
+    </section>
+    <!-- <script src="./dataflow.js"></script> -->
+    <script src="./data-flow.js"></script>
     <script src="./script.js"></script>
+
 </body>
 </html>

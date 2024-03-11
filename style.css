@@ -49,6 +49,8 @@ input:checked + label{
 .row2{
     display: flex;
     width: 60vw;
+    height: 1.7rem;
+    align-items: center;
 }
 
 .row2 input{
@@ -87,20 +89,25 @@ input:checked + label{
 }
 
 .container{
-    height: 85vh;
+    height: 75vh;
     overflow: scroll;
+}
+.container::-webkit-scrollbar{
+    display: none;
 }
 .sno-container{
     background-color: white;
     position: sticky;
     left: 0;
 }
-.sno-container .snocell{
+.sno-container .sno{
     border: .5px solid lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1.5rem;
+    text-align: center;
+    height: 1.8rem;
+    padding: 2px;
 }
 
 .sno-container{
@@ -122,17 +129,59 @@ input:checked + label{
     border-top: none;
     border-right: none;
     min-width: 150px;
-    min-height: 1.5rem;
+    min-height: 1.8rem;
+    padding: 2px;
+    padding-left: 10px;
 }
 
-.first-cell{
+.header .first-cell{
     border: .5px solid gray;
     min-width: 50px;
     height: 1.8rem;
 }
 
 .row .cell:focus{
-    outline: 2px solid #1B72E8;
+    border: 2px solid #1B72E8;
     height: auto;
     border-color: transparent;
+}
+.row .active-cell{
+    border: 2px solid #1B72E8;
+}
+#fx{
+    min-height: 1.7rem;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.test{
+    width: 200px;
+    height: 32px;
+    border: 2px solid blue;
+    display: inline-block;
+    overflow: hidden;
+}
+.foot{
+    border-top: 2px solid black;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.foot-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+.foot-form input:checked + label{
+    background-color: green !important;
+    color: white;
+}
+.foot-form input:checked + label{
+    padding: 5px;
+    border-radius: 5px;
 }
